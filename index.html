@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Zone Optics — Premium Eyeglasses, Sunglasses & Prescription Lenses</title>
+    <meta name="description" content="Eye Zone Optics offers premium eyeglasses, sunglasses, prescription lenses, and blue light glasses. Shop stylish frames online with expert optical service in Bahria Town Karachi.">
+    <meta name="keywords" content="eyeglasses, sunglasses, prescription glasses, blue light glasses, optical store, Bahria Town Karachi, Eye Zone Optics">
+    <meta name="author" content="Eye Zone Optics">
+    <meta property="og:title" content="Eye Zone Optics — Premium Eyewear Store">
+    <meta property="og:description" content="Shop premium eyeglasses, sunglasses, and prescription lenses online. Expert optical service in Bahria Town Karachi.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <i class="fas fa-glasses"></i>
+            </div>
+            <div class="preloader-text">Eye Zone Optics</div>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="main-header">
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <span><i class="fas fa-phone-alt"></i> 0311-2466606</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Bahria Town Karachi</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <span><i class="fas fa-star"></i> 5.0 ★ Rated</span>
+                        <span><i class="fas fa-truck"></i> Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#home" class="logo" id="nav-logo">
+                        <i class="fas fa-glasses logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">Eye Zone</span>
+                            <span class="logo-tag">Optics</span>
+                        </div>
+                    </a>
+                    <div class="nav-search" id="nav-search">
+                        <input type="text" placeholder="Search frames, sunglasses..." id="search-input">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#shop" class="nav-link" data-page="shop">Shop Glasses</a></li>
+                        <li><a href="#prescription" class="nav-link" data-page="prescription">Prescription</a></li>
+                        <li><a href="#sunglasses" class="nav-link" data-page="sunglasses">Sunglasses</a></li>
+                        <li><a href="#order" class="nav-link" data-page="order">Order</a></li>
+                        <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                        <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button class="nav-action-btn" id="wishlist-btn" title="Wishlist">
+                            <i class="fas fa-heart"></i>
+                            <span class="badge" id="wishlist-count">0</span>
+                        </button>
+                        <button class="nav-action-btn" id="cart-btn" title="Shopping Cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="badge" id="cart-count">0</span>
+                        </button>
+                        <button class="nav-action-btn" id="account-btn" title="Account">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <button class="mobile-menu-btn" id="mobile-menu-btn">
+                            <span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Shopping Cart</h3>
+            <button class="cart-close" id="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <a href="#shop" class="btn btn-primary btn-sm">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display:none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">Rs. 0</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkout-btn">Proceed to Checkout</button>
+            <a href="https://wa.me/923112466606?text=Hello! I'd like to place an order." class="btn btn-whatsapp btn-block" target="_blank">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-overlay" id="wishlist-overlay"></div>
+    <div class="wishlist-sidebar" id="wishlist-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-heart"></i> My Wishlist</h3>
+            <button class="cart-close" id="wishlist-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="wishlist-items">
+            <div class="cart-empty">
+                <i class="fas fa-heart"></i>
+                <p>Your wishlist is empty</p>
+                <a href="#shop" class="btn btn-primary btn-sm">Browse Frames</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quickview-modal">
+        <div class="modal-content quickview-content">
+            <button class="modal-close" id="quickview-close"><i class="fas fa-times"></i></button>
+            <div class="quickview-body">
+                <div class="quickview-image">
+                    <img src="" alt="" id="quickview-img">
+                </div>
+                <div class="quickview-info">
+                    <h2 id="quickview-name"></h2>
+                    <div class="quickview-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(4.5)</span>
+                    </div>
+                    <p class="quickview-price" id="quickview-price"></p>
+                    <p class="quickview-desc" id="quickview-desc"></p>
+                    <div class="quickview-details">
+                        <span><strong>Frame:</strong> <span id="qv-frame"></span></span>
+                        <span><strong>Material:</strong> <span id="qv-material"></span></span>
+                        <span><strong>Gender:</strong> <span id="qv-gender"></span></span>
+                    </div>
+                    <div class="quickview-actions">
+                        <button class="btn btn-primary" id="qv-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        <button class="btn btn-outline" id="qv-add-wishlist"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+        <!-- ===================== HOME PAGE ===================== -->
+        <section id="page-home" class="page active">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-bg-image"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-particles" id="hero-particles"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <span class="hero-badge"><i class="fas fa-star"></i> 5.0 Star Rated Optical Store</span>
+                            <h1 class="hero-title">See Better.<br><span class="gradient-text">Look Better.</span></h1>
+                            <p class="hero-subtitle">Premium Eyeglasses, Sunglasses, and Prescription Lenses — crafted for style and clarity.</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary btn-lg"><i class="fas fa-glasses"></i> Shop Glasses</a>
+                                <a href="https://wa.me/923112466606?text=Hello! I'd like to order glasses." class="btn btn-whatsapp btn-lg" target="_blank"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="hero-stat">
+                                    <span class="stat-number" data-count="500">0</span>+
+                                    <span class="stat-text">Frames</span>
+                                </div>
+                                <div class="hero-stat">
+                                    <span class="stat-number" data-count="2000">0</span>+
+                                    <span class="stat-text">Happy Customers</span>
+                                </div>
+                                <div class="hero-stat">
+                                    <span class="stat-number" data-count="5">0</span>.0
+                                    <span class="stat-text">Star Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-model-frame">
+                                <img src="images/hero-model.jpg" alt="Stylish woman wearing premium glasses from Eye Zone Optics" class="hero-model-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-wave">
+                    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                        <path d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,42.7C1248,43,1344,53,1392,58.7L1440,64L1440,120L0,120Z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Featured Categories -->
+            <div class="section categories-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Our Collection</span>
+                        <h2 class="section-title">Featured Categories</h2>
+                        <p class="section-subtitle">Find the perfect eyewear for every occasion</p>
+                    </div>
+                    <div class="categories-grid">
+                        <div class="category-card" data-category="prescription" onclick="navigateTo('shop')">
+                            <div class="category-icon"><i class="fas fa-glasses"></i></div>
+                            <h3>Prescription Glasses</h3>
+                            <p>Clear vision, stylish frames</p>
+                            <span class="category-link">Shop Now <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="category-card" data-category="fashion" onclick="navigateTo('shop')">
+                            <div class="category-icon"><i class="fas fa-gem"></i></div>
+                            <h3>Fashion Frames</h3>
+                            <p>Trending designer styles</p>
+                            <span class="category-link">Shop Now <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="category-card" data-category="computer" onclick="navigateTo('shop')">
+                            <div class="category-icon"><i class="fas fa-desktop"></i></div>
+                            <h3>Computer Glasses</h3>
+                            <p>Protect your eyes from screens</p>
+                            <span class="category-link">Shop Now <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="category-card" data-category="sunglasses" onclick="navigateTo('sunglasses')">
+                            <div class="category-icon"><i class="fas fa-sun"></i></div>
+                            <h3>Sunglasses</h3>
+                            <p>UV protection with style</p>
+                            <span class="category-link">Shop Now <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="category-card" data-category="bluelight" onclick="navigateTo('shop')">
+                            <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Blue Light Glasses</h3>
+                            <p>Digital eye strain relief</p>
+                            <span class="category-link">Shop Now <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Selling Frames -->
+            <div class="section bestsellers-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Most Popular</span>
+                        <h2 class="section-title">Best Selling Frames</h2>
+                        <p class="section-subtitle">Our customers' top picks</p>
+                    </div>
+                    <div class="products-grid" id="home-products-grid">
+                        <!-- Products injected by JS -->
+                    </div>
+                    <div class="section-cta">
+                        <a href="#shop" class="btn btn-primary btn-lg">View All Frames <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="section why-us-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Why Eye Zone</span>
+                        <h2 class="section-title">Why Choose Eye Zone Optics</h2>
+                        <p class="section-subtitle">We are committed to your vision and style</p>
+                    </div>
+                    <div class="why-us-grid">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-star"></i></div>
+                            <h3>5.0 Customer Rating</h3>
+                            <p>Consistently rated 5 stars by our happy customers for quality and service.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-tags"></i></div>
+                            <h3>Affordable Eyewear</h3>
+                            <p>Premium quality frames and lenses at prices that won't break the bank.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-award"></i></div>
+                            <h3>Premium Frame Quality</h3>
+                            <p>Handpicked frames crafted with durable materials for lasting comfort.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-user-md"></i></div>
+                            <h3>Expert Optical Service</h3>
+                            <p>Professional opticians providing accurate prescriptions and fittings.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-th-large"></i></div>
+                            <h3>Wide Frame Collection</h3>
+                            <p>500+ styles to choose from, including the latest designer frames.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Reviews -->
+            <div class="section reviews-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Customer Love</span>
+                        <h2 class="section-title">What Our Customers Say</h2>
+                        <p class="section-subtitle">Real reviews from real customers</p>
+                    </div>
+                    <div class="reviews-carousel" id="reviews-carousel">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">"Amazing quality glasses at very reasonable prices! The staff is very helpful and professional. Highly recommend Eye Zone Optics."</p>
+                            <div class="review-author">
+                                <div class="review-avatar">A</div>
+                                <div>
+                                    <strong>Ahmed Khan</strong>
+                                    <span class="review-source"><i class="fab fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">"Got my prescription glasses from here and the quality is outstanding. The frame selection is incredible and prices are very fair."</p>
+                            <div class="review-author">
+                                <div class="review-avatar">S</div>
+                                <div>
+                                    <strong>Sarah Ali</strong>
+                                    <span class="review-source"><i class="fab fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">"Best optical store in Bahria Town Karachi! They have a wide range of frames and the eye checkup was very thorough. Will visit again."</p>
+                            <div class="review-author">
+                                <div class="review-avatar">M</div>
+                                <div>
+                                    <strong>Muhammad Raza</strong>
+                                    <span class="review-source"><i class="fab fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">"My whole family gets their glasses from Eye Zone. The quality, service, and prices are unmatched. Truly the best in Karachi!"</p>
+                            <div class="review-author">
+                                <div class="review-avatar">F</div>
+                                <div>
+                                    <strong>Fatima Noor</strong>
+                                    <span class="review-source"><i class="fab fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="section cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Order Your Perfect Glasses Today</h2>
+                        <p>Premium frames, expert service, and affordable prices — all in one place.</p>
+                        <div class="cta-buttons">
+                            <a href="#shop" class="btn btn-white btn-lg"><i class="fas fa-glasses"></i> Shop Now</a>
+                            <a href="https://wa.me/923112466606?text=Hello! I'd like to order glasses." class="btn btn-whatsapp-outline btn-lg" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SHOP PAGE ===================== -->
+        <section id="page-shop" class="page">
+            <div class="page-banner shop-banner">
+                <div class="container">
+                    <h1>Shop Glasses</h1>
+                    <p>Find your perfect frame from our premium collection</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> Shop Glasses</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="shop-layout">
+                        <aside class="shop-sidebar" id="shop-sidebar">
+                            <div class="sidebar-header">
+                                <h3><i class="fas fa-filter"></i> Filters</h3>
+                                <button class="btn-clear-filters" id="clear-filters">Clear All</button>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-price">Price Range <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-price">
+                                    <div class="price-range-slider">
+                                        <input type="range" min="0" max="15000" value="0" class="range-min" id="price-min">
+                                        <input type="range" min="0" max="15000" value="15000" class="range-max" id="price-max">
+                                    </div>
+                                    <div class="price-values">
+                                        <span id="price-min-val">Rs. 0</span>
+                                        <span id="price-max-val">Rs. 15,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-shape">Frame Shape <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-shape">
+                                    <label class="filter-checkbox"><input type="checkbox" value="round" class="shape-filter"> Round</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="square" class="shape-filter"> Square</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="cat-eye" class="shape-filter"> Cat Eye</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="rectangle" class="shape-filter"> Rectangle</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="aviator" class="shape-filter"> Aviator</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="geometric" class="shape-filter"> Geometric</label>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-color">Frame Color <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-color">
+                                    <div class="color-swatches">
+                                        <button class="color-swatch" data-color="black" style="background:#111" title="Black"></button>
+                                        <button class="color-swatch" data-color="brown" style="background:#8B4513" title="Brown"></button>
+                                        <button class="color-swatch" data-color="gold" style="background:#DAA520" title="Gold"></button>
+                                        <button class="color-swatch" data-color="silver" style="background:#C0C0C0" title="Silver"></button>
+                                        <button class="color-swatch" data-color="blue" style="background:#0F4C81" title="Blue"></button>
+                                        <button class="color-swatch" data-color="transparent" style="background:rgba(200,200,200,0.3); border:2px dashed #999" title="Transparent"></button>
+                                        <button class="color-swatch" data-color="tortoise" style="background: linear-gradient(135deg, #8B4513 25%, #DAA520 50%, #654321 75%)" title="Tortoise"></button>
+                                        <button class="color-swatch" data-color="pink" style="background:#E8A0BF" title="Pink/Rose"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-material">Frame Material <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-material">
+                                    <label class="filter-checkbox"><input type="checkbox" value="metal" class="material-filter"> Metal</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="acetate" class="material-filter"> Acetate</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="titanium" class="material-filter"> Titanium</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="tr90" class="material-filter"> TR90</label>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-gender">Gender <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-gender">
+                                    <label class="filter-checkbox"><input type="checkbox" value="men" class="gender-filter"> Men</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="women" class="gender-filter"> Women</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="unisex" class="gender-filter"> Unisex</label>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-toggle="filter-size">Frame Size <i class="fas fa-chevron-down"></i></h4>
+                                <div class="filter-content" id="filter-size">
+                                    <label class="filter-checkbox"><input type="checkbox" value="small" class="size-filter"> Small</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="medium" class="size-filter"> Medium</label>
+                                    <label class="filter-checkbox"><input type="checkbox" value="large" class="size-filter"> Large</label>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="shop-main">
+                            <div class="shop-toolbar">
+                                <div class="shop-result-count" id="shop-result-count">Showing 12 products</div>
+                                <div class="shop-sort">
+                                    <label>Sort by:</label>
+                                    <select id="shop-sort-select">
+                                        <option value="featured">Featured</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="name">Name A-Z</option>
+                                        <option value="rating">Top Rated</option>
+                                    </select>
+                                </div>
+                                <button class="mobile-filter-btn" id="mobile-filter-btn"><i class="fas fa-filter"></i> Filters</button>
+                            </div>
+                            <div class="products-grid" id="shop-products-grid">
+                                <!-- Products injected by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PRESCRIPTION PAGE ===================== -->
+        <section id="page-prescription" class="page">
+            <div class="page-banner prescription-banner">
+                <div class="container">
+                    <h1>Prescription Glasses</h1>
+                    <p>Customize your perfect pair in 5 easy steps</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> Prescription Glasses</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <!-- Step Progress -->
+                    <div class="step-progress">
+                        <div class="step-item active" data-step="1">
+                            <div class="step-circle">1</div>
+                            <span>Select Frame</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item" data-step="2">
+                            <div class="step-circle">2</div>
+                            <span>Prescription</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item" data-step="3">
+                            <div class="step-circle">3</div>
+                            <span>Lens Type</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item" data-step="4">
+                            <div class="step-circle">4</div>
+                            <span>Upload Rx</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item" data-step="5">
+                            <div class="step-circle">5</div>
+                            <span>Add to Cart</span>
+                        </div>
+                    </div>
+
+                    <!-- Step Content -->
+                    <div class="step-content-area">
+                        <!-- Step 1: Select Frame -->
+                        <div class="step-panel active" id="step-1">
+                            <h2>Step 1: Select Your Frame</h2>
+                            <p class="step-desc">Choose a frame that matches your style and face shape.</p>
+                            <div class="products-grid prescription-frames" id="rx-frames-grid">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Enter Prescription -->
+                        <div class="step-panel" id="step-2">
+                            <h2>Step 2: Enter Your Prescription</h2>
+                            <p class="step-desc">Enter your prescription details or we'll call to confirm.</p>
+                            <div class="rx-form">
+                                <div class="rx-table">
+                                    <div class="rx-row rx-header">
+                                        <div class="rx-cell"></div>
+                                        <div class="rx-cell">SPH</div>
+                                        <div class="rx-cell">CYL</div>
+                                        <div class="rx-cell">Axis</div>
+                                        <div class="rx-cell">PD</div>
+                                    </div>
+                                    <div class="rx-row">
+                                        <div class="rx-cell rx-label">Right (OD)</div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. -2.00" class="rx-input" id="rx-od-sph"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. -0.50" class="rx-input" id="rx-od-cyl"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. 180" class="rx-input" id="rx-od-axis"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. 32" class="rx-input" id="rx-od-pd"></div>
+                                    </div>
+                                    <div class="rx-row">
+                                        <div class="rx-cell rx-label">Left (OS)</div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. -1.75" class="rx-input" id="rx-os-sph"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. -0.25" class="rx-input" id="rx-os-cyl"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. 175" class="rx-input" id="rx-os-axis"></div>
+                                        <div class="rx-cell"><input type="text" placeholder="e.g. 31" class="rx-input" id="rx-os-pd"></div>
+                                    </div>
+                                </div>
+                                <p class="rx-note"><i class="fas fa-info-circle"></i> Don't have your prescription? You can upload it in Step 4 or visit us for an eye exam.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Lens Type -->
+                        <div class="step-panel" id="step-3">
+                            <h2>Step 3: Choose Your Lens Type</h2>
+                            <p class="step-desc">Select the lens type that best suits your needs.</p>
+                            <div class="lens-options-grid">
+                                <div class="lens-option" data-lens="single-vision">
+                                    <div class="lens-icon"><i class="fas fa-eye"></i></div>
+                                    <h3>Single Vision</h3>
+                                    <p>For distance or near vision correction</p>
+                                    <span class="lens-price">+ Rs. 500</span>
+                                </div>
+                                <div class="lens-option" data-lens="reading">
+                                    <div class="lens-icon"><i class="fas fa-book-reader"></i></div>
+                                    <h3>Reading Glasses</h3>
+                                    <p>Optimized for close-up reading</p>
+                                    <span class="lens-price">+ Rs. 500</span>
+                                </div>
+                                <div class="lens-option" data-lens="progressive">
+                                    <div class="lens-icon"><i class="fas fa-layer-group"></i></div>
+                                    <h3>Progressive Lenses</h3>
+                                    <p>Seamless transition from near to far</p>
+                                    <span class="lens-price">+ Rs. 2,000</span>
+                                </div>
+                                <div class="lens-option" data-lens="bluelight">
+                                    <div class="lens-icon"><i class="fas fa-shield-alt"></i></div>
+                                    <h3>Blue Light Protection</h3>
+                                    <p>Block harmful blue light from screens</p>
+                                    <span class="lens-price">+ Rs. 800</span>
+                                </div>
+                                <div class="lens-option" data-lens="photochromic">
+                                    <div class="lens-icon"><i class="fas fa-sun"></i></div>
+                                    <h3>Photochromic Lenses</h3>
+                                    <p>Automatically darken in sunlight</p>
+                                    <span class="lens-price">+ Rs. 1,500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Upload Prescription -->
+                        <div class="step-panel" id="step-4">
+                            <h2>Step 4: Upload Your Prescription</h2>
+                            <p class="step-desc">Upload a photo of your prescription for accurate lens preparation.</p>
+                            <div class="upload-area" id="upload-area">
+                                <div class="upload-content">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <h3>Drag & Drop your prescription here</h3>
+                                    <p>or click to browse files</p>
+                                    <span class="upload-formats">Supports: JPG, PNG, PDF (Max 5MB)</span>
+                                    <input type="file" id="rx-file-input" accept=".jpg,.jpeg,.png,.pdf" hidden>
+                                </div>
+                                <div class="upload-preview" id="upload-preview" style="display:none">
+                                    <i class="fas fa-file-image"></i>
+                                    <span id="upload-filename"></span>
+                                    <button class="btn-remove-file" id="remove-file"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <p class="rx-note"><i class="fas fa-info-circle"></i> Don't have a prescription? Skip this step and we'll contact you to confirm.</p>
+                        </div>
+
+                        <!-- Step 5: Review & Add to Cart -->
+                        <div class="step-panel" id="step-5">
+                            <h2>Step 5: Review & Add to Cart</h2>
+                            <p class="step-desc">Review your selections and add to cart.</p>
+                            <div class="order-summary-card">
+                                <div class="summary-row">
+                                    <span>Selected Frame:</span>
+                                    <strong id="summary-frame">—</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Lens Type:</span>
+                                    <strong id="summary-lens">—</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Prescription:</span>
+                                    <strong id="summary-rx">—</strong>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Estimated Total:</span>
+                                    <strong id="summary-total">Rs. 0</strong>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="btn btn-primary btn-lg" id="rx-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                                <a href="https://wa.me/923112466606?text=Hello! I'd like to order prescription glasses." class="btn btn-whatsapp btn-lg" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="step-navigation">
+                            <button class="btn btn-outline" id="step-prev" disabled><i class="fas fa-arrow-left"></i> Previous</button>
+                            <button class="btn btn-primary" id="step-next">Next Step <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SUNGLASSES PAGE ===================== -->
+        <section id="page-sunglasses" class="page">
+            <div class="page-banner sunglasses-banner">
+                <div class="container">
+                    <h1>Sunglasses Collection</h1>
+                    <p>Style meets UV protection</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> Sunglasses</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <!-- Sub-categories -->
+                    <div class="sun-categories">
+                        <button class="sun-cat-btn active" data-suncat="all">All Sunglasses</button>
+                        <button class="sun-cat-btn" data-suncat="men">Men</button>
+                        <button class="sun-cat-btn" data-suncat="women">Women</button>
+                        <button class="sun-cat-btn" data-suncat="polarized">Polarized</button>
+                        <button class="sun-cat-btn" data-suncat="fashion">Fashion</button>
+                    </div>
+                    <div class="products-grid" id="sunglasses-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ORDER PAGE ===================== -->
+        <section id="page-order" class="page">
+            <div class="page-banner order-banner">
+                <div class="container">
+                    <h1>Order Glasses</h1>
+                    <p>Place your order online and get it delivered to your door</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> Order Glasses</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="order-layout">
+                        <div class="order-form-card">
+                            <h2><i class="fas fa-clipboard-list"></i> Order Form</h2>
+                            <form id="order-form" onsubmit="return false;">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="order-name">Full Name *</label>
+                                        <input type="text" id="order-name" placeholder="Your full name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-phone">Phone Number *</label>
+                                        <input type="tel" id="order-phone" placeholder="03XX-XXXXXXX" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-email">Email Address</label>
+                                    <input type="email" id="order-email" placeholder="your.email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-frame">Frame Model</label>
+                                    <input type="text" id="order-frame" placeholder="e.g., Classic Rectangle Black">
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-rx">Prescription Details</label>
+                                    <textarea id="order-rx" rows="3" placeholder="Enter your prescription details (SPH, CYL, Axis, PD)"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-rx-file">Upload Prescription</label>
+                                    <div class="file-upload-simple">
+                                        <input type="file" id="order-rx-file" accept=".jpg,.jpeg,.png,.pdf">
+                                        <span class="file-upload-label"><i class="fas fa-paperclip"></i> Choose file</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-address">Delivery Address *</label>
+                                    <textarea id="order-address" rows="3" placeholder="Complete delivery address" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-notes">Additional Notes</label>
+                                    <textarea id="order-notes" rows="2" placeholder="Any special instructions"></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="place-order-btn">
+                                        <i class="fas fa-check-circle"></i> Place Order
+                                    </button>
+                                    <a href="https://wa.me/923112466606?text=Hello! I'd like to place an order for glasses." class="btn btn-whatsapp btn-lg btn-block" target="_blank">
+                                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="order-info-card">
+                            <div class="order-info-item">
+                                <i class="fas fa-truck"></i>
+                                <div>
+                                    <h4>Free Delivery</h4>
+                                    <p>On orders above Rs. 3,000</p>
+                                </div>
+                            </div>
+                            <div class="order-info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Quality Guarantee</h4>
+                                    <p>30-day quality assurance</p>
+                                </div>
+                            </div>
+                            <div class="order-info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Need Help?</h4>
+                                    <p>Call us: 0311-2466606</p>
+                                </div>
+                            </div>
+                            <div class="order-info-item">
+                                <i class="fas fa-undo"></i>
+                                <div>
+                                    <h4>Easy Returns</h4>
+                                    <p>Hassle-free return policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT PAGE ===================== -->
+        <section id="page-about" class="page">
+            <div class="page-banner about-banner">
+                <div class="container">
+                    <h1>About Eye Zone Optics</h1>
+                    <p>Your trusted eyewear partner in Bahria Town Karachi</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> About Us</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <span class="section-badge">Our Story</span>
+                            <h2>About Eye Zone Optics</h2>
+                            <p class="about-lead">Eye Zone Optics provides stylish eyewear and high-quality prescription lenses to help customers see clearly while looking fashionable.</p>
+                            <p>Located in the heart of Bahria Town Karachi, we've been serving the community with premium optical services and a wide range of designer frames. Our team of experienced opticians is dedicated to ensuring every customer finds the perfect pair of glasses that combines comfort, style, and visual clarity.</p>
+                            <p>We believe that great vision shouldn't come at a premium price. That's why we offer affordable eyewear without compromising on quality, backed by our 5-star customer satisfaction guarantee.</p>
+                        </div>
+                        <div class="about-image">
+                            <div class="about-img-card">
+                                <i class="fas fa-glasses"></i>
+                                <h3>500+ Frames</h3>
+                                <p>Premium Collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-section">
+                        <div class="mission-card">
+                            <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3>Our Mission</h3>
+                            <p>Provide affordable eyewear with professional optical guidance to help everyone see clearly and look their best.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-icon"><i class="fas fa-eye"></i></div>
+                            <h3>Our Vision</h3>
+                            <p>To become the most trusted and customer-loved optical store in Karachi, known for quality, affordability, and exceptional service.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-icon"><i class="fas fa-heart"></i></div>
+                            <h3>Our Values</h3>
+                            <p>Customer satisfaction, quality craftsmanship, honest pricing, and professional expertise guide everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT PAGE ===================== -->
+        <section id="page-contact" class="page">
+            <div class="page-banner contact-banner">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>We're here to help you find your perfect pair</p>
+                    <div class="breadcrumb"><a href="#home">Home</a> <i class="fas fa-chevron-right"></i> Contact</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="contact-layout">
+                        <div class="contact-info-cards">
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <h3>Visit Us</h3>
+                                <p>Precinct, AQ Super Market<br>Shop Number G60, 19<br>Bahria Town Karachi<br>Karachi, 75340, Pakistan</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                                <h3>Call Us</h3>
+                                <p>0311-2466606</p>
+                                <a href="tel:03112466606" class="btn btn-primary btn-sm"><i class="fas fa-phone"></i> Call Now</a>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+                                <h3>WhatsApp</h3>
+                                <p>Chat with us on WhatsApp</p>
+                                <a href="https://wa.me/923112466606" class="btn btn-whatsapp btn-sm" target="_blank"><i class="fab fa-whatsapp"></i> Message Us</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-main">
+                            <div class="contact-form-card">
+                                <h2><i class="fas fa-envelope"></i> Send Us a Message</h2>
+                                <form id="contact-form" onsubmit="return false;">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="contact-name">Your Name *</label>
+                                            <input type="text" id="contact-name" placeholder="Full name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact-email">Your Email *</label>
+                                            <input type="email" id="contact-email" placeholder="your@email.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-subject">Subject</label>
+                                        <input type="text" id="contact-subject" placeholder="How can we help?">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-message">Message *</label>
+                                        <textarea id="contact-message" rows="5" placeholder="Write your message..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg" id="send-message-btn">
+                                        <i class="fas fa-paper-plane"></i> Send Message
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- Business Hours -->
+                            <div class="hours-card">
+                                <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                                <div class="hours-list">
+                                    <div class="hours-row"><span>Monday</span><span>1:00 PM – 10:00 PM</span></div>
+                                    <div class="hours-row"><span>Tuesday</span><span>1:00 PM – 10:00 PM</span></div>
+                                    <div class="hours-row"><span>Wednesday</span><span>1:00 PM – 10:30 PM</span></div>
+                                    <div class="hours-row"><span>Thursday</span><span>1:00 PM – 10:00 PM</span></div>
+                                    <div class="hours-row"><span>Friday</span><span>3:00 PM – 10:00 PM</span></div>
+                                    <div class="hours-row"><span>Saturday</span><span>1:00 PM – 11:00 PM</span></div>
+                                    <div class="hours-row"><span>Sunday</span><span>3:00 PM – 8:30 PM</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="map-section">
+                        <h2 class="section-title">Find Us on Map</h2>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.174!2d67.2396!3d24.9562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU3JzIyLjMiTiA2N8KwMTQnMjIuNiJF!5e0!3m2!1sen!2spk!4v1" 
+                                width="100%" height="400" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,85.3C1248,85,1344,75,1392,69.3L1440,64L1440,0L0,0Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-glasses logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">Eye Zone</span>
+                            <span class="logo-tag">Optics</span>
+                        </div>
+                    </a>
+                    <p>Premium eyeglasses, sunglasses, and prescription lenses. Your trusted optical store in Bahria Town Karachi.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/923112466606" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop Glasses</a></li>
+                        <li><a href="#prescription">Prescription Glasses</a></li>
+                        <li><a href="#sunglasses">Sunglasses</a></li>
+                        <li><a href="#order">Order Glasses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> AQ Super Market, Shop G60<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahria Town Karachi</p>
+                    <p><i class="fas fa-phone-alt"></i> 0311-2466606</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 1PM - 10PM</p>
+                    <a href="https://wa.me/923112466606" class="btn btn-whatsapp btn-sm" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eye Zone Optics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923112466606?text=Hello! I need help with eyeglasses." class="whatsapp-float" target="_blank" id="whatsapp-float" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
